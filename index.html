@@ -10,9 +10,9 @@
     <header>
         <h1>Il mio Viaggio a Londra</h1>
         <div>
-            <img src="img/pexels-bill-emrich-230794-0.jpg" alt="">
-            <img src="img/pexels-bill-emrich-230794-1.jpg" alt="">
-            <img src="img/pexels-bill-emrich-230794-2.jpg" alt="">
+            <img src="img/pexels-bill-emrich-230794-0.jpg" alt="ruota panoramica">
+            <img src="img/pexels-bill-emrich-230794-1.jpg" alt="vista tamigi">
+            <img src="img/pexels-bill-emrich-230794-2.jpg" alt="big ben">
         </div>
     </header>
     
@@ -21,7 +21,13 @@
     <main>
         <h2>Le mie spese</h2>
         <table>
-            <thead>   <!-- Testa della tabella con numero descrizione e prezzo -->
+            <thead>   <!-- Testa della tabella con numero descrizione e prezzo --> 
+                      <!--
+                      <tr> = tale row - contiene una riga della tabella
+                      <td> = cella che contiene i valori all'interno di una riga
+                      <th> = table header, cella che contiene intestazione (titolo di una colonna ad es.)
+                            usato prevalentemente nel thead, e serve a dare una definizione dei dati a cui si riferisce-->  
+                
                 <th>
                     Numero
                 </th>
@@ -50,8 +56,7 @@
                     <td>120 €</td>
                 </tr>
                 <tr>
-                    <td>Totale</td>
-                    <td>_______</td>
+                    <td colspan="2">Totale</td>  <!-- si usa colespan per creare distanza da Totale in poi -->
                     <td>360 €</td>
                 </tr>
             </tbody>
@@ -62,7 +67,7 @@
         <section>
             <h2>Cose da fare</h2>
             <ul>
-                <li>Visitare la Tower of London &#x2717</li>
+                <li>Visitare la Tower of London &#x2717</li> <!-- per la x si puo' usare anche &cross anziche entity code-->
                 <li>Visitare greenwich &check;</li>
                 <li>Ascoltare un artista di strada a Covent Garden &check;</li>
                 <li>Mangiare il tipico Fish and Chips inglese &#x2717 </li>
@@ -73,24 +78,61 @@
 
         <section>
             <h2>Info utili:</h2>
-            <ol>
-                <li>Numeri utili di emergenza
+            <ol>          <!-- in questo caso la <ul> deve essere contenuta all'interno dei <li> della <ol>, infatti una <ul> puo' essere contenuta solo in un <li> della <ol> in questo caso-->
+                <li>
+                    Numeri utili di emergenza
                     <ul>
-                        <li><strong>999</strong> - Emergenza</li>
-                        <li><strong>101</strong> - Numero Polizia</li>
-                        <li><strong>111</strong> - Numero assistenza medica</li>
+                        <li>
+                            <strong>
+                             999
+                            </strong>
+                             - Emergenza
+                        </li>
+                        <li>
+                            <strong>
+                             101
+                            </strong>                   <!-- sezione info utili indentato correttamente cercando di andare piu' verticalmente possibile-->
+                             - Numero Polizia</li>
+                        <li>
+                            <strong>
+                             111
+                            </strong>
+                             - Numero assistenza medica
+                        </li>
                     </ul>
                 </li>  
-                <li>Hotel
+                <li>
+                    Hotel
                     <ul>
-                        <li><strong>Nome hotel:</strong>Buckingham Palace</li>
-                        <li><strong>Indirizzo hotel:</strong>Westminster, London SW1A 1AA, Regno Unito</li>
+                        <li>
+                            <strong>
+                             Nome hotel:
+                            </strong>
+                             Buckingham Palace
+                        </li>
+                        <li>
+                            <strong>
+                             Indirizzo hotel:
+                            </strong>
+                             Westminster, London SW1A 1AA, Regno Unito
+                        </li>
                     </ul>
                 </li>
-                <li>Aereo
-                    <ul>
-                        <li><strong>Volo di Andata:</strong> YI234X, ore 9.30 da Milano Malpensa</li>
-                        <li><strong>Volo di Ritorno:</strong> YI236X, ore 18.30 da London Heathrow</li>
+                <li>
+                    Aereo
+                    <ul>                                <!-- sezione intera indentata in modo corretto verticalmente-->
+                        <li>
+                            <strong>
+                             Volo di Andata:
+                            </strong>
+                             YI234X, ore 9.30 da Milano Malpensa
+                        </li>
+                        <li>
+                            <strong>
+                             Volo di Ritorno:
+                            </strong>
+                             YI236X, ore 18.30 da London Heathrow
+                            </li>
                     </ul>
                 </li>  
                 
@@ -103,8 +145,8 @@
         <section>
 
         <h2>Le foto</h2>
-        <img src="https://i.insider.com/58663ad6dd0895427f8b4a76?width=1200" alt="">
-        <img src="https://www.abta.com/sites/default/files/styles/large/public/media/uploads/london-400x400-compressor_0.jpg" alt="">
+        <img src="https://i.insider.com/58663ad6dd0895427f8b4a76?width=1200" alt="Vista aerea citta di londra">
+        <img src="https://www.abta.com/sites/default/files/styles/large/public/media/uploads/london-400x400-compressor_0.jpg" alt="ponte">
 
         </section>
 
